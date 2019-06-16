@@ -1,7 +1,7 @@
 /*:
  ## Exercise - Control Transfer Statements
  
- Create a for-in loop that will loop through the characters of `alphabet`, and print every other letter by continuing to the next iteration if you are on a letter you do not wish to print. (Hint: You can use the modulo operator to only print even indexed characters).
+ Create a for-in loop that will loop through `alphabet`. Inside the loop, print every other letter by continuing to the next iteration if you are on a letter you do not wish to print. (Hint: You can use the modulo operator to only print even indexed characters).
  */
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 

@@ -9,10 +9,10 @@ class BookFormViewController: UIViewController {
     
     var book: Book?
     
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var authorTextField: UITextField!
-    @IBOutlet weak var genreTextField: UITextField!
-    @IBOutlet weak var lengthTextField: UITextField!
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var authorTextField: UITextField!
+    @IBOutlet var genreTextField: UITextField!
+    @IBOutlet var lengthTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

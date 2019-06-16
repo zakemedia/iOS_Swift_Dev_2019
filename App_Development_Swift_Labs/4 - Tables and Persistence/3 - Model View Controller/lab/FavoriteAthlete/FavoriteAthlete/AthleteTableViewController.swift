@@ -6,7 +6,7 @@ class AthleteTableViewController: UITableViewController {
         static let athleteCell = "AthleteCell"
         static let editAthleteSegue = "EditAthlete"
     }
-    
+
     var athletes: [Athlete] = []
     
     override func viewWillAppear(_ animated: Bool) {

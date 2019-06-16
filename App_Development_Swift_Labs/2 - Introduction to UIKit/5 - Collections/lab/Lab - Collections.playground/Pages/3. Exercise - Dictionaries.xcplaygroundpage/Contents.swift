@@ -1,6 +1,6 @@
 /*:
  ## Exercise - Dictionaries
- 
+
  Create a variable `[String: Int]` dictionary that can be used to look up the number of days in a particular month. Use a dictionary literal to initialize it with January, February, and March. January contains 31 days, February has 28, and March has 31. Print the dictionary.
  */
 
@@ -28,7 +28,7 @@ let colorsArray = ["Red", "Green", "Blue"]
 
 
 /*:
- Print the last element of `colorsArray`, accessing it through the dictionary you've created. You'll have to use if-let syntax or the bang operator to unwrap what is returned from the dictionary before you can access element of the array.
+ Print the last element of `colorsArray`, accessing it through the dictionary you've created. You'll have to use if-let syntax or the force unwrap operator to unwrap what is returned from the dictionary before you can access an element of the array.
  */
 
 

@@ -3,12 +3,12 @@ import UIKit
 
 class AddEditEmojiTableViewController: UITableViewController {
     
-    @IBOutlet weak var symbolTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var usageTextField: UITextField!
+    @IBOutlet var symbolTextField: UITextField!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var descriptionTextField: UITextField!
+    @IBOutlet var usageTextField: UITextField!
     
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet var saveButton: UIBarButtonItem!
     
     var emoji: Emoji?
 

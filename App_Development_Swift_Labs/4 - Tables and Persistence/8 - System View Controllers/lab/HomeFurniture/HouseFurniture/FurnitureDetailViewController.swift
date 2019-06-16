@@ -5,9 +5,9 @@ class FurnitureDetailViewController: UIViewController {
     
     var furniture: Furniture?
     
-    @IBOutlet weak var choosePhotoButton: UIButton!
-    @IBOutlet weak var furnitureTitleLabel: UILabel!
-    @IBOutlet weak var furnitureDescriptionLabel: UILabel!
+    @IBOutlet var choosePhotoButton: UIButton!
+    @IBOutlet var furnitureTitleLabel: UILabel!
+    @IBOutlet var furnitureDescriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

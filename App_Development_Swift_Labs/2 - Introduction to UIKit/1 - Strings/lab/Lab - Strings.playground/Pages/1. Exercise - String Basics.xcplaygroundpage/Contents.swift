@@ -10,7 +10,10 @@
  
  - "My favorite quote is <INSERT QUOTE HERE>."
  
- Write in your own favorite quote where indicated, and be sure to include escaped quotation marks. Print the value of `favoriteQuote`
+ Write in your own favorite quote where indicated, and be sure to include escaped quotation marks. When finished, print the value of `favoriteQuote`.
+
+ - callout(Example): If your favorite quote is "The grass is always greener on the other side" the value of `favoriteQuote` should be such that printing `favoriteQuote` results in the following:
+    * `My favorite quote is "The grass is always greener on the other side."`
  */
 
 

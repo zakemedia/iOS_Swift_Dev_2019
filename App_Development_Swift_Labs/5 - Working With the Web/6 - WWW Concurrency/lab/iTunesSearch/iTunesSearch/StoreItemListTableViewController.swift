@@ -3,8 +3,8 @@ import UIKit
 
 class StoreItemListTableViewController: UITableViewController {
     
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var filterSegmentedControl: UISegmentedControl!
     
     // add item controller property
     

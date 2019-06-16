@@ -39,7 +39,7 @@ class EmployeeListTableViewController: UITableViewController {
     }
 
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             employees.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -51,9 +51,10 @@ class EmployeeListTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let employeeDetailTableViewController = segue.destination as? EmployeeDetailTableViewController else {return}
         if let indexPath = tableView.indexPathForSelectedRow,
-            segue.identifier == PropertyKeys.editEmployeeSegueIdentifier {
+            segue.identifier == PropertyKeys.editEmployeeSegueIdentifier,
+            let navController = segue.destination as? UINavigationController,
+            let employeeDetailTableViewController = navController.topViewController as? EmployeeDetailTableViewController {
             employeeDetailTableViewController.employee = employees[indexPath.row]
         }
     }

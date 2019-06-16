@@ -7,9 +7,9 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         static let unwindToListIndentifier = "UnwindToListSegue"
     }
     
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var dobLabel: UILabel!
-    @IBOutlet weak var employeeTypeLabel: UILabel!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var dobLabel: UILabel!
+    @IBOutlet var employeeTypeLabel: UILabel!
     
     var employee: Employee?
     
