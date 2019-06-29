@@ -27,11 +27,15 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
+        view.backgroundColor = lightOn ? .white : .black
+
+/* refactored above
     if lightOn {
         view.backgroundColor = .white
     } else {
         view.backgroundColor = .black
     }
+*/
     }
 }
 
