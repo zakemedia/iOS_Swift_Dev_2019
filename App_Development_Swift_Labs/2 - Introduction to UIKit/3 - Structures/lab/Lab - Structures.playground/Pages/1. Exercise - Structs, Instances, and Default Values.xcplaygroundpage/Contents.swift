@@ -17,9 +17,9 @@ print(somePlace.longitude)
 /*:
  Change `somePlace`'s latitude to 51.514004, and the longitude to 0.125226, then print the updated values.
  */
-somePlace.latitude = 51.514004
-somePlace.longitude = 0.125226
-print("\(somePlace.latitude) and \(somePlace.longitude)")
+somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
+print(somePlace.latitude)
+print(somePlace.longitude)
 /*:
  Now imagine you are making a social app for sharing your favorite books. Create a `Book` struct with four variable properties: `title`, `author`, `pages`, and `price`. The default values for both `title` and `author` should be an empty string. `pages` should default to 0, and `price` should default to 0.0.
  */
@@ -29,10 +29,10 @@ struct Book {
     var pages: Int = 0
     var price: Double = 0.0
 }
-
 /*:
  Create a variable instance of `Book` called `favoriteBook` without supplying any arguments. Print out the title of `favoriteBook`. Does it currently reflect the title of your favorite book? Probably not. Change all four properties of `favoriteBook` to reflect your favorite book. Then, using the properties of `favoriteBook`, print out facts about the book.
  */
 var favoriteBook = Book(title: "The Hobbit", author: "JRR Tolken", pages: 310, price: 29.99)
+
 print("My fav books is called \(favoriteBook.title) by \(favoriteBook.author), which has \(favoriteBook.pages) pages and costs \(favoriteBook.price).")
 //: page 1 of 10  |  [Next: App Exercise - Workout Tracking](@next)
