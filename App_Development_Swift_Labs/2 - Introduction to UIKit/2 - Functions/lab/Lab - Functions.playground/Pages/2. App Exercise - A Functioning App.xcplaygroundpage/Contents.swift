@@ -40,5 +40,5 @@ func  progressUpdate() {
 progressUpdate()
 
 // Is there a better / shorter hand way of writing this?
-// Would of a switch been better here?
+// Would of a switch been better here?  - YES
 //: [Previous](@previous)  |  page 2 of 6  |  [Next: Exercise - Parameters and Argument Labels](@next)

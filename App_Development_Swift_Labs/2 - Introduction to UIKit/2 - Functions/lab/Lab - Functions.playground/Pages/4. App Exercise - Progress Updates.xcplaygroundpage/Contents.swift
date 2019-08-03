@@ -9,11 +9,54 @@
  
  Call the function a number of times, passing in different values of `steps` and `goal`. Observe the printouts and make sure what is printed to the console is what you would expect for the parameters passsed in.
  */
+let goal = 10000
 
+
+ func progressUpdate(steps : Int, goal : Int) {
+    if steps < Int(Double(goal) * 0.10) {
+        print ("You're off to a good start!")
+    } else if steps < Int(Double(goal) * 0.50) {
+        print ("You're almost halfway there!")
+    } else if steps < Int(Double(goal) * 0.90) {
+        print ("You're over halfway there!")
+    } else if steps < goal {
+        print ("You're almost there!")
+    } else {
+        print ("You beat your goal!")
+    }
+ }
+
+
+/* CHECK - Gave error about bool
+ 
+ func progressUpdate(steps : Int, goal : Int) {
+ switch goal {
+ case steps < Int(Double(goal) * 0.10):
+ print ("You're off to a good start!")
+ case steps < Int(Double(goal) * 0.50):
+ print ("You're almost halfway there!")
+ case steps < Int(Double(goal) * 0.90):
+ print ("You're over halfway there!")
+ case steps < goal:
+ print ("You're almost there!")
+ default:
+ print ("You beat your goal!")
+ }
+ }
+ */
+
+progressUpdate(steps: 250, goal: 10000)
 
 /*:
  Your fitness tracking app is going to help runners stay on pace to reach their goals. Write a function called pacing that takes four `Double` parameters called `currentDistance`, `totalDistance`, `currentTime`, and `goalTime`. Your function should calculate whether or not the user is on pace to hit or beat `goalTime`. If yes, print "Keep it up!", otherwise print "You've got to push it just a bit harder!"
  */
+func pacing (currentDistance: Double, totalDistance: Double, currentTime: Double, goalTime: Double) {
+    if currentDistance / totalDistance >= currentTime / goalTime {
+        print ("Keep it up!")
+    } else {
+        print ("You've got to push it just a bit harder!")
+    }
+}
 
-
+pacing(currentDistance: 100.00, totalDistance: 1000.00, currentTime: 10.00, goalTime: 30.00)
 //: [Previous](@previous)  |  page 4 of 6  |  [Next: Exercise - Return Values](@next)
