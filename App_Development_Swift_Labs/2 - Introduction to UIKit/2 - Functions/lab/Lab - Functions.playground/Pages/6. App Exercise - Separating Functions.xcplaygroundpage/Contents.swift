@@ -34,7 +34,7 @@ pacing(currentDistance: 200.00, totalDistance: 40.00, currentTime: 4.00, goalTim
  let pace = calculatePace(currentDistance: currentDistance, totalDistance: totalDistance, currentTime: currentTime)
  
  return pace <= goalTime ? "Keep it up!" : "You've got to push it just a bit harder!"
- /*
+ */
 /*:
 
  _Copyright © 2018 Apple Inc._
