@@ -26,8 +26,8 @@ print("\(somePlace.latitude) and \(somePlace.longitude)")
 struct Book {
     var title: String
     var author: String
-    var pages: Int
-    var price: Double
+    var pages: Int = 0
+    var price: Double = 0.0
 }
 
 /*:
