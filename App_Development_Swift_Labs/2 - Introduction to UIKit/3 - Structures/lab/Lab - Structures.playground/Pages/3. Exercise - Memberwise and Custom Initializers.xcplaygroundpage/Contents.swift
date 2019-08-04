@@ -62,4 +62,5 @@ print(someonesHeight.heightInInches)
 var myHeight = Height(heightInInches: 66)
 print(myHeight.heightInInches)
 print(myHeight.heightInCentimeters)
+// WJ Revist
 //: [Previous](@previous)  |  page 3 of 10  |  [Next: App Exercise - Users and Distance](@next)
