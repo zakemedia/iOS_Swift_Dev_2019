@@ -34,8 +34,30 @@ print(myArray)
 /*:
  Print the last element of `colorsArray`, accessing it through the dictionary you've created. You'll have to use if-let syntax or the force unwrap operator to unwrap what is returned from the dictionary before you can access an element of the array.
  */
-if let colours = myArray["Colours"] {
-    print(colours.last)
+//if let colours = myArray["Colours"] {
+//    print(colours.last)
+//}
+
+let myFirstArray = myArray["Colours"]
+print("This is my value", myFirstArray?.first ?? "LUke")
+
+if let firstArray = myArray["Colours"], let colorArrayLastValue = firstArray.last {
+    // We use the parameter inside the block
+    print(colorArrayLastValue)
 }
+
+
+func testGuard() {
+    guard let theFirstArray = myArray["Colours"] else {
+        return // Exit if we can't get it
+    }
+    
+    // WE use the parameter outside of the block
+    print("The value 2 is \(theFirstArray)")
+}
+
+testGuard()
+
+
 // WJ check this
 //: [Previous](@previous)  |  page 3 of 4  |  [Next: App Exercise - Pacing](@next)

@@ -7,6 +7,29 @@
 
  Create a dictionary `paces` of type [String: Double] and assign it a dictionary literal with "Easy", "Medium", and "Fast" keys corresponding to values of 10.0, 8.0, and 6.0. These numbers correspond to mile pace in minutes. Print the dictionary.
  */
+enum Paces {
+    case easy
+    case medium
+    case fast
+    
+    var speed: Double {
+        switch self {
+        case .easy:
+            return 10.0
+        case .medium:
+            return 8.0
+        case .fast:
+            return 6.0
+        }
+    }
+}
+
+let myPace = Paces.easy
+print(myPace.speed)
+
+
+
+
 var paces: [String:Double] = ["Easy": 10.0, "Medium": 8.0,"Fast": 6.0,]
 print(paces)
 /*:
