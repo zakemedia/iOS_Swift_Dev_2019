@@ -7,11 +7,11 @@ let userInputAge: String = "17e"
 
 func checkAge (age: String) -> Int? {
     if let theAge = Int(age) {
-            if theAge >= 18 {
-                print("Welcome!")
-            } else {
-                print("Sorry, but you aren't old enough to use our app.")
-            } // if let > if ends
+        if theAge >= 18 {
+            print("Welcome!")
+        } else {
+            print("Sorry, but you aren't old enough to use our app.")
+        } // if let > if ends
         return theAge // returning theAge at if let
     } else {
         print("Sorry, something went wrong. Can you please re-enter your age?")
@@ -45,7 +45,7 @@ func makePurchase(itemName: String) -> Double? {
             return nil
         }
     } else {
-       return nil
+        return nil
     }
 }
 

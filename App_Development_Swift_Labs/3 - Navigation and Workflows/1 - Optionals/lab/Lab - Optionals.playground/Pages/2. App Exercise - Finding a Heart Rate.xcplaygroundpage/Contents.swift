@@ -25,8 +25,6 @@ let oldHR4 = 70
 
 var hrAverage: Int = (oldHR1 + oldHR2 + oldHR3 + oldHR4 + heartRate!) / 5
 print(hrAverage)
-
-
 /*:
  If you didn't unwrap the value of `heartRate`, you've probably noticed that you cannot perform mathematical operations on an optional value. You will first need to unwrap `heartRate`.
  
