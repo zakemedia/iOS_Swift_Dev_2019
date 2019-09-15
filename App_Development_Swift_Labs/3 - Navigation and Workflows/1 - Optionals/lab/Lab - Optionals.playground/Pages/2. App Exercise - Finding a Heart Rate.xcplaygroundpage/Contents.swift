@@ -7,13 +7,14 @@
  
  Declare a variable `heartRate` of type `Int?` and set it to `nil`. Print the value.
  */
-var heartrate : Int? = nil
-print(heartrate)
+var heartRate : Int? = nil
+print(heartRate)
 /*:
  In this example, if the user fixes the positioning of the heart rate monitor, the app may get a proper heart rate reading. Below, update the value of `heartRate` to 74. Print the value.
  */
-heartrate = 70
-print(heartrate)
+heartRate = 74
+print(heartRate)
+print(heartRate!)
 /*:
  As you've done in other app exercises, create a variable `hrAverage` of type `Int` and use the values stored below and the value of `heartRate` to calculate an average heart rate.
  */
@@ -22,18 +23,21 @@ let oldHR2 = 76
 let oldHR3 = 79 
 let oldHR4 = 70
 
-var hrAverage : Int = (oldHR1 + oldHR2 + oldHR3 + oldHR4 + heartrate!) / 5
-print (hrAverage)
+var hrAverage: Int = (oldHR1 + oldHR2 + oldHR3 + oldHR4 + heartRate!) / 5
+print(hrAverage)
+
+
 /*:
  If you didn't unwrap the value of `heartRate`, you've probably noticed that you cannot perform mathematical operations on an optional value. You will first need to unwrap `heartRate`.
  
  Safely unwrap the value of `heartRate` using optional binding. If it has a value, calculate the average heart rate using that value and the older heart rates stored above. If it doesn't have a value, calculate the average heart rate using only the older heart rates. In each case, print the value of `hrAverage`.
  */
-if let unwrappedHeartRate = heartrate {
-    let hrAverage = (oldHR1 + oldHR2 + oldHR3 + oldHR4 + unwrappedHeartRate) / 5
+if let unwrappedHeartRate = heartRate {
+    var hrAverage: Int = (oldHR1 + oldHR2 + oldHR3 + oldHR4 + unwrappedHeartRate)/5
     print(hrAverage)
 } else {
-    let hrAverage = (oldHR1 + oldHR2 + oldHR3 + oldHR4) / 4
+    var hrAverage: Int = (oldHR1 + oldHR2 + oldHR3 + oldHR4)/4
     print(hrAverage)
 }
+// WJ Check this
 //: [Previous](@previous)  |  page 2 of 6  |  [Next: Exercise - Functions and Optionals](@next)
